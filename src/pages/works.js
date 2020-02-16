@@ -42,77 +42,7 @@ const WorksPage = () => (
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <div className="singel-event-list mt-30">
-                            <div className="event-thum">
-                                <img src="images/event/e-2.jpg" alt="Event" />
-                            </div>
-                            <div className="event-cont">
-                                <span><i className="fa fa-calendar" /> 2 December 2018</span>
-                                <a href="events-singel.html"><h4>Tech Summit</h4></a>
-                                <span><i className="fa fa-clock-o" /> 10:00 Am - 3:00 Pm</span>
-                                <span><i className="fa fa-map-marker" /> Rc Auditorim</span>
-                                <p>Nam nec tellus a odio tincidunt auctor a ornare odionon mauris itae erat conuat</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="singel-event-list mt-30">
-                            <div className="event-thum">
-                                <img src="images/event/e-3.jpg" alt="Event" />
-                            </div>
-                            <div className="event-cont">
-                                <span><i className="fa fa-calendar" /> 2 December 2018</span>
-                                <a href="events-singel.html"><h4>Tech Summit</h4></a>
-                                <span><i className="fa fa-clock-o" /> 10:00 Am - 3:00 Pm</span>
-                                <span><i className="fa fa-map-marker" /> Rc Auditorim</span>
-                                <p>Nam nec tellus a odio tincidunt auctor a ornare odionon mauris itae erat conuat</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="singel-event-list mt-30">
-                            <div className="event-thum">
-                                <img src="images/event/e-4.jpg" alt="Event" />
-                            </div>
-                            <div className="event-cont">
-                                <span><i className="fa fa-calendar" /> 2 December 2018</span>
-                                <a href="events-singel.html"><h4>Tech Summit</h4></a>
-                                <span><i className="fa fa-clock-o" /> 10:00 Am - 3:00 Pm</span>
-                                <span><i className="fa fa-map-marker" /> Rc Auditorim</span>
-                                <p>Nam nec tellus a odio tincidunt auctor a ornare odionon mauris itae erat conuat</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="singel-event-list mt-30">
-                            <div className="event-thum">
-                                <img src="images/event/e-1.jpg" alt="Event" />
-                            </div>
-                            <div className="event-cont">
-                                <span><i className="fa fa-calendar" /> 2 December 2018</span>
-                                <a href="events-singel.html"><h4>Tech Summit</h4></a>
-                                <span><i className="fa fa-clock-o" /> 10:00 Am - 3:00 Pm</span>
-                                <span><i className="fa fa-map-marker" /> Rc Auditorim</span>
-                                <p>Nam nec tellus a odio tincidunt auctor a ornare odionon mauris itae erat conuat</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="singel-event-list mt-30">
-                            <div className="event-thum">
-                                <img src="images/event/e-2.jpg" alt="Event" />
-                            </div>
-                            <div className="event-cont">
-                                <span><i className="fa fa-calendar" /> 2 December 2018</span>
-                                <a href="events-singel.html"><h4>Tech Summit</h4></a>
-                                <span><i className="fa fa-clock-o" /> 10:00 Am - 3:00 Pm</span>
-                                <span><i className="fa fa-map-marker" /> Rc Auditorim</span>
-                                <p>Nam nec tellus a odio tincidunt auctor a ornare odionon mauris itae erat conuat</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> {/* row */}
+                    </div> {/* row */}
                 <div className="row">
                     <div className="col-lg-12">
                         <nav className="courses-pagination mt-50">

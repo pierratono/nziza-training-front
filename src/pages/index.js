@@ -238,12 +238,12 @@ rummage around.</p>
       </div> {/* container */}
     </section>
 
-    <section id="video-feature" className="bg_cover pt-60 pb-110" style={{ backgroundImage: 'back' }}>
+    <section id="video-feature" className="bg_cover pt-60 pb-110" style={{ backgroundImage: 'url(images/bg-1.jpg)' }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 order-last order-lg-first">
             <div className="video text-lg-left text-center pt-50">
-              {/* <a className="Video-popup" href="https://www.youtube.com/watch?v=bRRtdzJH1oE"><i className="fa fa-play" /></a> */}
+              <a className="Video-popup" href="https://www.youtube.com/watch?v=bRRtdzJH1oE"><i className="fa fa-play" /></a>
             </div>
           </div>
           <div className="col-lg-5 offset-lg-1 order-first order-lg-last">

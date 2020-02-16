@@ -13,9 +13,9 @@ const Header = ({ siteTitle }) => (
     <div className="container">
       <div className="row">
         <div className="col-lg-6">
-          <div className="header-contact text-lg-left text-center">
+          <div className="header-contact text-lg-center text-center">
             <ul>
-              <li><img src={ic_map} alt="icon" /><span>KG 19 Ave 9, Kigali</span></li>
+              <li><img src={ic_map} alt="icon" /><span> Musanze - Huye - Kigali</span></li>
               <li><img src={ic_email} alt="icon" /><span>education@nzizatraining.ac.rw</span></li>
             </ul>
           </div>
@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => (
               </div>
             </div>
             <div className="button float-left">
-                <Link className="main-btn" to="check"> Check Certificate</Link>
+                <Link className="main-btn" to="check">Register Now</Link>
             </div>
           </div>
         </div>
@@ -74,6 +74,9 @@ const Header = ({ siteTitle }) => (
             </button>
             <div className="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
               <ul className="navbar-nav mr-auto">
+            
+              
+
               <li className="nav-item">
                 <Link to="/">Home</Link>
                 </li>
@@ -90,6 +93,9 @@ const Header = ({ siteTitle }) => (
                 </li>
                 <li className="nav-item">
                   <Link to="works">Works</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="check">Check Certificate</Link>
                 </li>
                 <li className="nav-item">
                   <Link to="news">News</Link>

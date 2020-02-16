@@ -32,20 +32,6 @@ const NewsPage = () => (
                     <div className="col-lg-8">
                         <div className="singel-blog mt-30">
                             <div className="blog-thum">
-                                <img src="images/blog/b-1.jpg" alt="Blog" />
-                            </div>
-                            <div className="blog-cont">
-                                <a href="blog-singel.html"><h3>Few tips for get better results in examination</h3></a>
-                                <ul>
-                                    <li><a href="#"><i className="fa fa-calendar" />25 Dec 2018</a></li>
-                                    <li><a href="#"><i className="fa fa-user" />Mark anthem</a></li>
-                                    <li><a href="#"><i className="fa fa-tags" />Education</a></li>
-                                </ul>
-                                <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus .</p>
-                            </div>
-                        </div> {/* singel blog */}
-                        <div className="singel-blog mt-30">
-                            <div className="blog-thum">
                                 <img src="images/blog/b-2.jpg" alt="Blog" />
                             </div>
                             <div className="blog-cont">
@@ -91,12 +77,7 @@ const NewsPage = () => (
                                         <ul>
                                             <li><a href="#">Lorem ipsum</a></li>
                                             <li><a href="#">Lorem ipsum</a></li>
-                                            <li><a href="#">Lorem ipsum</a></li>
-                                            <li><a href="#">Lorem ipsum</a></li>
-                                            <li><a href="#">Lorem ipsum</a></li>
-                                            <li><a href="#">Lorem ipsum</a></li>
-                                            <li><a href="#">Lorem ipsum</a></li>
-                                            <li><a href="#">Lorem ipsum</a></li>
+                                           
                                         </ul>
                                     </div>
                                 </div> {/* categories */}
@@ -117,33 +98,7 @@ const NewsPage = () => (
                                                     </div> {/* singel post */}
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div className="singel-post">
-                                                        <div className="thum">
-                                                            <img src="images/blog/blog-post/bp-2.jpg" alt="Blog" />
-                                                        </div>
-                                                        <div className="cont">
-                                                            <h6>How to build a game with java</h6>
-                                                            <span>10 Dec 2018</span>
-                                                        </div>
-                                                    </div> {/* singel post */}
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div className="singel-post">
-                                                        <div className="thum">
-                                                            <img src="images/blog/blog-post/bp-1.jpg" alt="Blog" />
-                                                        </div>
-                                                        <div className="cont">
-                                                            <h6>Basic accounting from primary</h6>
-                                                            <span>07 Dec 2018</span>
-                                                        </div>
-                                                    </div> {/* singel post */}
-                                                </a>
-                                            </li>
-                                        </ul>
+                                            </ul>
                                     </div> {/* saidbar post */}
                                 </div>
                             </div> {/* row */}
