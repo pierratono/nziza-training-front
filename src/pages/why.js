@@ -47,20 +47,20 @@ outcomes you want.</p>
                         </div>
                     </div> {/* about cont */}
                     <div className="col-lg-6">
-                       <div class="happy-student mt-55">
-                        <div class="happy-title">
+                       <div className="happy-student mt-55">
+                        <div className="happy-title">
                             <h4 style={{color:"white"}}>PROFESSIONALS WE TRAINED!</h4>
                         </div>
-                        <div class="student-slied">
+                            <div className="student-slied">
                             
-                            <div class="singel-student">
+                                <div className="singel-student">
                                 <img src="images/teachers/teacher-2/quote.png" alt="Quote"/>
                                 <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet</p>
                                 <h6>Lorem</h6>
                                 <span>Degree</span>
                             </div> {/* singel student */}
                         </div> {/* student slied */}
-                        <div class="student-image">
+                            <div className="student-image">
                             <img src="images/teachers/teacher-2/happy.png" alt="Image"/>
                         </div>
                     </div> {/* happy student */}

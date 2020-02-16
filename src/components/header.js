@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => (
               </div>
             </div>
             <div className="button float-left">
-              <a href="#" className="main-btn">Check Certificate</a>
+                <Link className="main-btn" to="check"> Check Certificate</Link>
             </div>
           </div>
         </div>
