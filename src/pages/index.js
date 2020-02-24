@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Link } from "gatsby"
+import { Link,graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,24 +11,61 @@ import f_1 from "../images/all-icon/f-1.png"
 import f_2 from "../images/all-icon/f-2.png"
 import f_3 from "../images/all-icon/f-3.png"
 import back from "../images/bg-1.jpg"
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import ReactTextCollapse from 'react-text-collapse'
+
+const TEXT_COLLAPSE_OPTIONS = {
+  collapse: false, // default state when component rendered
+  collapseText: '... read more', // text to show when collapsed
+  expandText: 'read less', // text to show when expanded
+  minHeight: 110, // component height when closed
+  maxHeight: 250, // expanded to
+  textStyle: { // pass the css for the collapseText and expandText here
+    color: "#007c9c",
+    fontSize: "16px"
+  }
+}
+
+const TEXT_COLLAPSE_OPTIONS2 = {
+  collapse: false, // default state when component rendered
+  collapseText: '... read more', // text to show when collapsed
+  expandText: 'read less', // text to show when expanded
+  minHeight: 50, // component height when closed
+  maxHeight: 110, // expanded to
+  textStyle: { // pass the css for the collapseText and expandText here
+    color: "#007c9c",
+    fontSize: "16px"
+  }
+}
 
 
-export default () => (
+
+
+const IndexPage= ({data}) => (
   <Layout>
     <SEO title="Home" />
 
-    <section id="slider-part-3" className="bg_cover" style={{ backgroundImage: 'url(images/slider/s-3.jpg)' }}>
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-10">
+    <section id="slider-part" className="slider-active">
+     
+       
+        <div className="single-slider slider-1 ">
+        <img src="images/1.jpg"/>
+          <h2 style={{ color: 'black' }}>Join other professionals in skills development in engineering and architecture</h2>
 
-          </div>
-        </div> {/* row */}
-        <div className="slider-feature pt-30 d-none d-md-block">
+        </div> {/* single slider */}
 
-        </div> {/* slider feature */}
-      </div> {/* container */}
-    </section>
+       
+
+     
+
+        
+       
+     
+      </section>
 
     <section id="category-3" className="category-2-items pt-50 pb-80 gray-bg">
       <div className="container">
@@ -162,16 +199,18 @@ developments in the world of CAD technology.</p>
               <div className="about-singel-items mt-30">
                 <span>01</span>
                 <h4>We focus on your career</h4>
+                <ReactTextCollapse options={TEXT_COLLAPSE_OPTIONS}>
 
                 <p>Our programs are focused, preparing professionals for a specific job with specific skills, allowing the
-university graduates to get back in the workplace quickly.</p>
+university graduates to get back in the workplace quickly.</p><br/>
 
-                <p>Our instructors work with their trainees every step of the way, delivering courses that are practical and
+               <p>Our instructors work with their trainees every step of the way, delivering courses that are practical and
                 goal-oriented. Trainees are guided through every chapter of every program, and the instructors are always
-available for suggestions and support.</p>
+available for suggestions and support.</p><br/>
 
                 <p>Short course programs ensure that each student receives the attention and skills they require to fulfill their
 personal and professional needs and that is what we excellently do. Try us today!</p>
+                </ReactTextCollapse>
 
               </div> {/* about singel */}
             </div>
@@ -179,19 +218,24 @@ personal and professional needs and that is what we excellently do. Try us today
               <div className="about-singel-items mt-30">
                 <span>02</span>
                 <h4>Our Mission</h4>
-                <blockquote>To deliver the highest quality skills development curriculum with innovative technology for the
-benefit of society locally and globally.</blockquote>
-                <blockquote>To support a United Nations goal of quality education thru collaborating with world level technology
-organizations.</blockquote>
-                <blockquote>To nurture trainees to become culturally and ethically productive Professionals with bright future.</blockquote>          </div> {/* about singel */}
+                <ReactTextCollapse options={TEXT_COLLAPSE_OPTIONS}>
+                <p>To deliver the highest quality skills development curriculum with innovative technology for the
+benefit of society locally and globally.</p><br/>
+                <p>To support a United Nations goal of quality education thru collaborating with world level technology
+organizations.</p><br/>
+                <p>To nurture trainees to become culturally and ethically productive Professionals with bright future.</p>  
+                </ReactTextCollapse>   
+                     </div> {/* about singel */}
             </div>
             <div className="col-lg-4 col-md-6 col-sm-10">
               <div className="about-singel-items mt-30">
                 <span>03</span>
                 <h4>Our vission</h4>
-                <blockquote>To provide Continuous market orientated trainings on trending technology.</blockquote>
-                <blockquote>To stop developing governments from importing skilled people to deliver every big project raises in a country by releasing expertly trained local professionals.</blockquote>
-                <blockquote>To be recognized as an international leader in skills development sector.</blockquote>
+                <ReactTextCollapse options={TEXT_COLLAPSE_OPTIONS}>
+                <p>To provide Continuous market orientated trainings on trending technology.</p><br/>
+                <p>To stop developing governments from importing skilled people to deliver every big project raises in a country by releasing expertly trained local professionals.</p><br/>
+                <p>To be recognized as an international leader in skills development sector.</p>
+                </ReactTextCollapse>
               </div> {/* about singel */}
             </div>
           </div> {/* row */}
@@ -260,10 +304,11 @@ rummage around.</p>
                     </div>
                     <div className="cont">
                       <h4>Indoor Training</h4>
+                      <ReactTextCollapse options={TEXT_COLLAPSE_OPTIONS2}>
                       <p>This is fixed three months training period; each trainee will attend class to learn how to link manual design
 and calculations taught in college with useful CAD trending technologies in every course we offer. This
 training provides an in-depth concentration on project delivery, doing exercises, and assignments.</p>
-                    </div>
+</ReactTextCollapse>                    </div>
                   </div> {/* singel feature */}
                 </li>
                 <li>
@@ -273,10 +318,12 @@ training provides an in-depth concentration on project delivery, doing exercises
                     </div>
                     <div className="cont">
                       <h4>Project design study</h4>
+                      <ReactTextCollapse options={TEXT_COLLAPSE_OPTIONS2}>
                       <p>This is where each trainee accepts a real-life project as a case study in three months that can be extended
 due to kind of a project. S/he studies it from scratch under the supervision of experienced trainers.
 Completing this project confirms that s/he has attained the competency we promise and turns what was
 learned in the training portion of the course has been transformed into real practices.</p>
+</ReactTextCollapse>
                     </div>
                   </div> {/* singel feature */}
                 </li>
@@ -287,12 +334,14 @@ learned in the training portion of the course has been transformed into real pra
                     </div>
                     <div className="cont">
                       <h4>Expert Seminar</h4>
+                      <ReactTextCollapse options={TEXT_COLLAPSE_OPTIONS2}>
                       <p>We know that Rwanda or developing countries in general import many knowledgeable people to run most
 of the projects raise. As An Industry-Based Training Institution working in skills development sector, we did
 not like that idea of governments to import skills to do the work. That is why in every year we organize one-
 week expert training seminar in every course we train. It is for importing world-level experts to highly train
 our local professionals instead of importing them to lead projects raise in our country and keep our local
 citizens lowly paid or unemployed.</p>
+</ReactTextCollapse>
                     </div>
                   </div> {/* singel feature */}
                 </li>
@@ -315,26 +364,26 @@ citizens lowly paid or unemployed.</p>
           </div>
         </div> {/* row */}
         <div className="row course-slied mt-30">
-          <div className="col-lg-4">
-            <div className="singel-course">
-              <div className="thum">
-                <div className="image">
-                  <img src="images/course/cu-1.jpg" alt="Course" />
+            {data.allStrapiCourses.nodes.map(course => (
+              <div key={course.id} className="col-lg-4">
+              <div className="singel-course" key={course.id}>
+                <div className="thum">
+                  <div className="image">
+                    <img src="images/course/cu-1.jpg" alt="Course" />
+                  </div>
                 </div>
-                <div className="price">
-                  <span>### RWF</span>
+                  <p className="pl-30 pt-20" style={{ color:"#9b2000",fontWeight:"bold"}}>{course.price} USD</p>
+                <div className="cont">
+                    <Link to={`/${course.id}`}><h5>{course.title}</h5></Link>
+                  <div className="course-teacher">
+                      <ReactTextCollapse options={TEXT_COLLAPSE_OPTIONS}>
+                    <p>{course.brief}</p>
+                    </ReactTextCollapse>
+                  </div>
                 </div>
+              </div> 
               </div>
-              <div className="cont">
-
-                <a href="courses-singel.html"><h4>Lorem ipsum</h4></a>
-                <div className="course-teacher">
-                  <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
-
-                </div>
-              </div>
-            </div> {/* singel course */}
-          </div>
+            ))}
         </div> {/* course slied */}
       </div> {/* container */}
     </section>
@@ -342,68 +391,35 @@ citizens lowly paid or unemployed.</p>
     <section id="teachers-part" className="pt-70 pb-120">
       <div className="container">
         <div className="row">
-          <div className="col-lg-5">
+          <div className="col-lg-12">
             <div className="section-title mt-50">
               <h5>Professional Team</h5>
               <h2>Meet Our team</h2>
             </div> {/* section title */}
-            <div className="teachers-cont">
-              <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris. <br /> <br /> auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris</p>
-              <a href="#" className="main-btn mt-55">Career with us</a>
-            </div> {/* team cont */}
           </div>
-          <div className="col-lg-6 offset-lg-1">
-            <div className="teachers mt-20">
-              <div className="row">
-                <div className="col-sm-6">
+          </div> {/* row */}
+
+        <div className="col-lg-12">
+          <div className="row course-slied mt-20">
+       
+              {data.allStrapiTeams.nodes.map(member => (
+                <div key={member.id} className="col-lg-4">
                   <div className="singel-teachers mt-30 text-center">
                     <div className="image">
                       <img src="images/teachers/t-1.jpg" alt="Teachers" />
                     </div>
                     <div className="cont">
-                      <a href="#"><h6>Lorem</h6></a>
-                      <span>Dolor</span>
+                      <a href="#"><h6>{member.name}</h6></a>
+                      <span>{member.occupation}</span>
                     </div>
                   </div> {/* singel team */}
                 </div>
-                <div className="col-sm-6">
-                  <div className="singel-teachers mt-30 text-center">
-                    <div className="image">
-                      <img src="images/teachers/t-2.jpg" alt="team" />
-                    </div>
-                    <div className="cont">
-                      <a href="#"><h6>Lorem</h6></a>
-                      <span>Dolor</span>
-                    </div>
-                  </div> {/* singel team */}
-                </div>
-                <div className="col-sm-6">
-                  <div className="singel-teachers mt-30 text-center">
-                    <div className="image">
-                      <img src="#" alt="team" />
-                    </div>
-                    <div className="cont">
-                      <a href="#"><h6>Lorem</h6></a>
-                      <span>Dolor</span>
-                    </div>
-                  </div> {/* singel team */}
-                </div>
-                <div className="col-sm-6">
-                  <div className="singel-teachers mt-30 text-center">
-                    <div className="image">
-                      <img src="images/teachers/t-4.jpg" alt="Team" />
-                    </div>
-                    <div className="cont">
-                      <a href="#"><h6>Lorem</h6></a>
-                      <span>Dolor</span>
-                    </div>
-                  </div> {/* singel team */}
-                </div>
-              </div> {/* row */}
-            </div> {/* team */}
-          </div>
-        </div> {/* row */}
+              ))}
+
+          </div> {/* team */}
+        </div>
       </div> {/* container */}
+
     </section>
 
     <section id="testimonial" className="bg_cover pt-115 pb-115" data-overlay={8} style={{ backgroundImage: 'url(images/bg-2.jpg)' }}>
@@ -417,21 +433,25 @@ citizens lowly paid or unemployed.</p>
           </div>
         </div> {/* row */}
         <div className="row testimonial-slied mt-40">
-          <div className="col-lg-6">
-            <div className="singel-testimonial">
-              <div className="testimonial-thum">
-                <img src="images/testimonial/t-1.jpg" alt="Testimonial" />
-                <div className="quote">
-                  <i className="fa fa-quote-right" />
+          
+          {data.allStrapiTestimonials.nodes.map(testimonial =>(
+            <div key={testimonial.id} className="col-lg-12 pb-40">
+              <div className="singel-testimonial">
+                <div className="testimonial-thum" style={{height:'100px'}}>
+                  <img src="images/testimonial/t-1.jpg" alt="Testimonial" />
+                  <div className="quote">
+                    <i className="fa fa-quote-right" />
+                  </div>
                 </div>
-              </div>
-              <div className="testimonial-cont">
-                <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                <h6>Lorem ipsum</h6>
-                <span>Lorem ipsum</span>
-              </div>
-            </div> {/* singel testimonial */}
-          </div>
+                <div className="testimonial-cont">
+                  <p>{testimonial.message}</p>
+                  <h6>{testimonial.name}</h6>
+                  <span>{testimonial.office}</span>
+                </div>
+              </div> {/* singel testimonial */}
+            </div>
+          ))}
+          
 
         </div> {/* testimonial slied */}
       </div> {/* container */}
@@ -495,17 +515,17 @@ citizens lowly paid or unemployed.</p>
         <div className="row patnar-slided">
           <div className="col-lg-4">
             <div className="singel-patnar text-center mt-40">
-              <img src="images/patnar-logo/p-1.png" alt="Logo" />
+              <img style={{height:"200px"}} src="images/patnar-logo/p-1.jpg" alt="Logo" />
             </div>
           </div>
           <div className="col-lg-4">
             <div className="singel-patnar text-center mt-40">
-              <img src="images/patnar-logo/p-2.png" alt="Logo" />
+              <img style={{ height: "200px" }} src="images/patnar-logo/p-2.jpg" alt="Logo" />
             </div>
           </div>
           <div className="col-lg-4">
             <div className="singel-patnar text-center mt-40">
-              <img src="images/patnar-logo/p-3.png" alt="Logo" />
+              <img style={{ height: "200px" }} src="images/patnar-logo/p-3.jpg" alt="Logo" />
             </div>
           </div>
         </div> {/* row */}
@@ -517,3 +537,41 @@ citizens lowly paid or unemployed.</p>
 
 
 )
+
+export default IndexPage
+
+export const pageQuery = graphql`
+query IndexQuery {
+  site {
+    siteMetadata {
+      title
+    }
+  }
+  allStrapiCourses {
+    nodes {
+      id
+      title
+      brief
+      price
+    }
+  }
+  allStrapiTestimonials {
+    nodes {
+      id
+      name
+      message
+      occupation
+      office
+    }
+  }
+   allStrapiTeams {
+    nodes {
+      id
+      name
+      occupation
+      brief
+    }
+  }
+  
+}
+  `

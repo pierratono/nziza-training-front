@@ -75,7 +75,7 @@ outcomes you want.</p>
                 <div className="row">
                     <div className="col-lg-5">
                         <div className="about-image mt-50">
-                            <img src="images/about/about-2.jpg" alt="why" />
+                            <img src="images/about/about-5.jpg" alt="why" />
                         </div>  {/* about imag */}
                     </div>
                     <div className="col-lg-7">
@@ -105,7 +105,7 @@ organizations.</p>
                     </div> {/* about cont */}
                     <div className="col-lg-5">
                         <div className="about-image mt-50">
-                            <img src="images/about/about-2.jpg" alt="why" />
+                            <img src="images/about/about-6.jpg" alt="why" />
                         </div>  {/* about imag */}
                     </div>
 

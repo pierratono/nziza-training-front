@@ -40,7 +40,7 @@ developments in the world of CAD technology.</p>
                     </div> {/* about cont */}
                     <div className="col-lg-7">
                         <div className="about-image mt-50">
-                            <img src="images/about/about-2.jpg" alt="About" />
+                            <img src="images/about/about-1.jpg" alt="About" />
                         </div>  {/* about imag */}
                     </div>
                 </div> {/* row */}
@@ -81,7 +81,7 @@ matter. It is why we are uniquely placed to champion skills development.</p>
                     </div> {/* about cont */}
                     <div className="col-lg-5">
                         <div className="about-image mt-50">
-                            <img src="images/about/about-2.jpg" alt="About" />
+                            <img src="images/about/about-3.jpg" alt="About" />
                         </div>  {/* about imag */}
                     </div>
                    
@@ -129,87 +129,31 @@ matter. It is why we are uniquely placed to champion skills development.</p>
             </div> {/* container */}
         </section>
 
-        <section id="about-page" className="pt-70 pb-110">
+        <section id="category-3" className="category-2-items pt-50 pb-80 white-bg">
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-5">
-                        <div className="section-title mt-50">
-                            <h5>About us</h5>
+                <div className="row justify-content-center">
+                    <div className="col-lg-12" style={{}}>
+                        <div className=" mt-30" style={{
+                            backgroundColor: "#fff", borderRadius: '20px', height: 'auto', padding: 16,
+                            boxShadow: '14px 14px 21px -12px rgba(0,0,0,0.25)'
+                        }}>
+                            <h2 style={{ textAlign: 'center' }}>Benefits of training with us</h2>
+                            <p>
+                                <ol>
+                                    <li>We provide custom-made training that will meet your needs as a professional.</li>
+                                    <li>At Nziza Training Academy, we do not believe in one-size fits all.</li>
+                                    <li>We use our vision to design short skill courses that will help one reach new heights.</li>
+                                </ol>
+                            </p>
 
-                        </div> {/* section title */}
-                        <div className="about-cont">
-                            <p>The programs at Nziza Training Academy are career-oriented in design - current, flexible, and useful. Taught
-by leaders in their fields, keeping themselves updated, to keep the lessons on track with the cutting-edge
-developments in the world of CAD technology.</p>
-                        </div>
-                    </div> {/* about cont */}
-                    <div className="col-lg-7">
-                        <div className="about-image mt-50">
-                            <img src="images/about/about-2.jpg" alt="About" />
-                        </div>  {/* about imag */}
-                    </div>
-                </div> {/* row */}
-                <div className="row">
-                    <div className="col-lg-5">
-                        <div className="about-image mt-50">
-                            <img src="images/about/about-2.jpg" alt="About" />
-                        </div>  {/* about imag */}
-                    </div>
-                    <div className="col-lg-7">
-                        <div className="section-title mt-50">
-                            <h5>Growing the Next Generation of Engineers AND Architects.</h5>
-
-                        </div> {/* section title */}
-                        <div className="about-cont">
-                            <p>Nziza Training Academy (NTA) has been training Professionals since October 2018 and is passionate about
-helping people succeed in an industry.</p>
-
-                            <p>Our trainees are given a strong foundation in engineering through practical training and gaining
-international recognized certificates. The centers’ excellent facilities and experienced staff train
-professionals in Architecture, Structural Engineering and Construction Management.</p>
-                        </div>
-                    </div> {/* about cont */}
-
-                </div> {/* row */}
-                <div className="row">
-                    <div className="col-lg-7">
-                        <div className="section-title mt-50">
-                            <h5>Working on designing a better world</h5>
-
-                        </div> {/* section title */}
-                        <div className="about-cont">
-                            <p>We are Nziza Training Academy (NTA), and we inspire, inform and influence the global engineering and
-architecture community to design a better world. As a diverse home across engineering and technology, we
-share the knowledge that helps make better sense of the world in order to solve the challenges that
-matter. It is why we are uniquely placed to champion skills development.</p>
-                        </div>
-                    </div> {/* about cont */}
-                    <div className="col-lg-5">
-                        <div className="about-image mt-50">
-                            <img src="images/about/about-2.jpg" alt="About" />
-                        </div>  {/* about imag */}
-                    </div>
-
-
-                </div> {/* row */}
-
-            </div> {/* container */}
-        </section>
-
-        <section id="page-banner" className="pt-105 pb-110 bg_cover" data-overlay={8} style={{ backgroundImage: 'url(images/page-banner-1.jpg)' }}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <div className="page-banner-cont">
-                            <h2 >Benefits of training with us</h2>
-                            <p style={{color:"white"}}>We provide custom-made training that will meet your needs as a professional. At Nziza Training Academy, we do not believe in one-size fits all. We use our vision to design short skill courses that will help one reach new heights.</p>
-                        </div>  {/* page banner cont */}
+                        </div> {/* singel slider feature */}
                     </div>
                 </div> {/* row */}
             </div> {/* container */}
         </section>
 
-        <section id="about-page" className="pt-70 pb-110">
+       
+        <section id="about-page" className="pt-20 pb-110">
             <div className="container">
                 <div className="row">
 
@@ -250,7 +194,7 @@ for your attention, meet you at any of Nziza Training Academy branches. See you 
                                 </div> {/* singel student */}
                             </div> {/* student slied */}
                             <div className="student-image">
-                                <img src="images/teachers/teacher-2/happy.png" alt="Image" />
+                                <img style={{marginRight:'-200px'}} src="images/people/ceo.jpg" alt="Image" />
                             </div>
                         </div> {/* happy student */}
                     </div>
@@ -261,9 +205,7 @@ for your attention, meet you at any of Nziza Training Academy branches. See you 
             </div> {/* container */}
         </section>
 
-
-
-
+     
     </Layout>
 )
 

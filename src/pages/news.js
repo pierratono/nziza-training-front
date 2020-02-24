@@ -7,7 +7,6 @@ const NewsPage = () => (
 
     <Layout>
         <SEO title="News" />
-
         <section id="page-banner" className="pt-105 pb-130 bg_cover" data-overlay={8} style={{ backgroundImage: 'url(images/page-banner-4.jpg)' }}>
             <div className="container">
                 <div className="row">
@@ -25,7 +24,6 @@ const NewsPage = () => (
                 </div> {/* row */}
             </div> {/* container */}
         </section>
-
         <section id="blog-page" className="pt-90 pb-120 gray-bg">
             <div className="container">
                 <div className="row">

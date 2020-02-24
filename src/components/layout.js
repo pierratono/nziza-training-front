@@ -12,27 +12,42 @@ import { useStaticQuery, graphql,Link } from "gatsby"
 import Header from "./header"
 import Logo_2 from "../images/logo-2.png"
 
+//import 'jquery'
+// const mainjs = require('../main.js')
+
 
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+  site {
+    siteMetadata {
+      title
+    }
+  }
+  allStrapiCourses {
+    nodes {
+      id
+      title
+      brief
+      price
+      cover {
+        publicURL
       }
     }
+  }
+  allStrapiTestimonials {
+    nodes {
+      id
+      name
+      message
+      occupation
+      office
+    }
+  }
+}
   `)
 
-  // allStrapiCourses {
-  //   nodes {
-  //     id
-  //     title
-  //     brief
-  //     price
-  //   }
-  // }
 
   return (
     <>

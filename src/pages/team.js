@@ -1,9 +1,10 @@
 import React from "react"
+import {Link,graphql} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const TeamPage = () => (
+const TeamPage = ({data}) => (
 
    <Layout>
        <SEO title="Team"/>
@@ -28,18 +29,20 @@ const TeamPage = () => (
         <section id="teachers-page" className="pt-90 pb-120 gray-bg">
             <div className="container">
                 <div className="row">
+                    {data.allStrapiTeams.nodes.map(member=>(
                     <div className="col-lg-3 col-sm-6">
                         <div className="singel-teachers mt-30 text-center">
                             <div className="image">
                                 <img src="images/teachers/t-1.jpg" alt="team" />
                             </div>
                             <div className="cont">
-                                <a href="#"><h6>Lorem</h6></a>
-                                <span>Ipsum</span>
+                                <a href="#"><h6>{member.name}</h6></a>
+                                <span>{member.occupation}}</span>
                             </div>
                         </div> {/* singel teachers */}
                     </div>
-                </div> {/* row */}
+                    ))}
+                </div>{/* row */}
                 <div className="row">
                     <div className="col-lg-12">
                         <nav className="courses-pagination mt-50">
@@ -69,3 +72,16 @@ const TeamPage = () => (
 )
 
 export default TeamPage
+
+export const teamQuery = graphql`
+query teamQuery {
+   allStrapiTeams {
+    nodes {
+      id
+      name
+      occupation
+      brief
+    }
+  }
+}
+  `
